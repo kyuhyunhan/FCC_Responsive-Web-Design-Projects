@@ -1,0 +1,30 @@
+#main {
+    background-color: rgba(224,224,224,0.7);
+    display: grid;
+    justify-items: center;
+}
+#img-div {
+    background-color: white;
+    width: 50%;
+    display: grid;
+    justify-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#image {
+    width: 30vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+}
+#tribute-info {
+    max-width: 700px;
+}
+#tribute-info li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#read-more {
+    text-align: center;
+}
