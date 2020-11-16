@@ -7,8 +7,8 @@
     <body>
         <div class="container">
             <header class="header">
-                <h1 id="title">freeCodeCamp Survey Form!</h1>
-                <p id="description">Thank you for taking the time to help us improve the platform</p>
+                <h1 id="title">Language Camp Survey Form</h1>
+                <p id="description">Thank you for taking the time to help us improve our Camp!</p>
             </header>
             <form id="survey-form">
                 <div class="form-group">
@@ -19,9 +19,60 @@
                     <label id="email-label" for="email">Email</label>
                     <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
                 </div>
-                <div>
+                <div class="form-group">
                     <label id="number-label" for="number">Age(optional)</label>
-                    <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+                    <input type="number" name="age" id="number" min="20" max="40" class="form-control" placeholder="Age">
+                </div>
+                <div class="form-group">
+                    <p>Which option best describes your current role?</p>
+                    <select id="dropdown" name="role" class="form-control" required>
+                        <option disabled selected value>Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="learner">Full Time Learner</option>
+                        <option value="preferNo">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>How many languages can you speak?</p>
+                    <label>
+                        <input name="language-count" value="only-one" type="radio" class="input-radio" checked>Only One
+                    </label>
+                    <label>
+                        <input name="language-count" value="two" type="radio" class="input-radio">Two
+                    </label>
+                    <label>
+                        <input name="language-count" value="more-than-three" type="radio" class="input-radio" checked>More than Three
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Which languages can you speak? (Include your mother tongue)</p>
+                    <label>
+                        <input type="checkbox" name="language" class="input-checkbox" value="english">English
+                    </label>
+                    <label>
+                        <input type="checkbox" name="language" class="input-checkbox" value="german">German
+                    </label>
+                    <label>
+                        <input type="checkbox" name="language" class="input-checkbox" value="spanish">Spanish
+                    </label>
+                    <label>
+                        <input type="checkbox" name="language" class="input-checkbox" value="korean">Korean
+                    </label>
+                    <label>
+                        <input type="checkbox" name="language" class="input-checkbox" value="chinese">Chinese
+                    </label>
+                    <label>
+                        <input type="checkbox" name="language" class="input-checkbox" value="italian">Italian
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Any comments?</p>
+                    <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comments here..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">Submit</button>
                 </div>
             </form>
         </div>
