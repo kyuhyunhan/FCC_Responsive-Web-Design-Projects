@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>product landing page</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="product-landing-page.css">
+        <style>
+            #header {
+                display: flex;
+            }
+            @media (max-width: 660px) { /* 이유는 모르겠으나 외부 파일로 읽어오면 테스트 패스가 안 됨.*/
+                #video {
+                    width: 320px;
+                    height: 180px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header id="header">
+            <img style="width:80px;height:auto;" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" id="header-img"/>
+            <nav id="nav-bar">
+                <ul>
+                    <li>
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#apple-care">Apple Care</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section id="subscribe">
+            <h1>If you want to get more info about Macbook Air2020,</h1>
+            <form id="form" action="https://www.freecodecamp.org/email-submit">
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                <input type="submit" id="submit" value="Subscribe!">
+            </form>
+        </section>
+        <div class="container">
+            <article>
+                <iframe id="video" width="640px" height="360px" src="https://www.youtube.com/embed/b3VcGKv9Cfw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article>
+            <section id="features"></section>
+                <header> <!-- header element를 section element의 하위에 사용해도 된다.-->
+
+                </header>
+            <section id="pricing"></section>
+                <header>
+
+                </header>
+            <section id="apple-care"></section>
+                <header>
+
+                </header>
+        </div>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
