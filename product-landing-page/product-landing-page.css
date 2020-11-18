@@ -1,0 +1,44 @@
+:root {
+    --color-white: white;
+    --color-header: rgb(209, 206, 206);
+}
+#logo {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+} 
+#header-img {
+    width: 40px;
+    margin: 0 15px 0 0;
+}
+#nav-bar li {
+    list-style: none;
+}
+#nav-bar a {
+    color: #000;
+    text-decoration: none;
+}
+#nav-bar ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 50px;
+}
+
+/* ------------------------------------------------ */
+
+#page-wrapper {
+    padding-top: 100px;
+}
+#subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
