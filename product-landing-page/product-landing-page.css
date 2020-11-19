@@ -1,6 +1,14 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 :root {
     --color-white: white;
     --color-header: rgb(209, 206, 206);
+    font-family: 'Lato', sans-serif;
 }
 #logo {
     display: flex;
@@ -25,6 +33,9 @@
     justify-content: space-around;
     margin-right: 50px;
 }
+.btn {
+    padding: 5px;
+}
 
 /* ------------------------------------------------ */
 
@@ -40,6 +51,19 @@
     align-items: center;
     margin: 40px 0;
 }
+#subscribe > h3 {
+    padding-bottom: 20px;
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#email {
+    max-width: 375px;
+    width: 100%;
+    padding: 5px;
+}
 .container {
     display: flex;
     align-items: center;
@@ -54,6 +78,39 @@ section {
     flex-direction: row;
     justify-content: center;
 }
+#pricing {
+    display: flex;
+    justify-content: space-between;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /*flex-direction이 column이기 때문에 main-axis와 cross-axis가 바뀐거였구나!!*/
+    text-align: center;
+    border: 1px solid black;
+    width: 250px;
+    padding: 0 0 30px 0;
+    
+}
+.product > .level {
+    background-color: #ddd;
+    color: black;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 0;
+}
+.product > h2 {
+    padding: 15px 0;
+}
+.product > ul {
+    margin: 15px 0;
+}
+  
+.product > ul > li {
+    padding: 5px 0;
+    list-style: none;
+}
 .grid {
     display: flex;
     align-items: center;
@@ -64,6 +121,14 @@ section {
     width: 10vw;
 }
 .feature-img {
+    width: 100px;
+    height: auto;
+}
+#apple-care {
+    display: flex;
+    justify-content: center;
+}
+#apple-care > img {
     width: 100px;
     height: auto;
 }
