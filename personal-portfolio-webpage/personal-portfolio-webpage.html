@@ -4,6 +4,27 @@
         <title>technical documentation page</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="personal-portfolio-webpage.css">
+        <link
+        href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+        rel="stylesheet"
+        />
+        <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+        crossorigin="anonymous"
+        />
+        <link
+        href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+        rel="stylesheet"
+        />
+        <style>
+            @media (max-width: 28.75em) {
+                html {
+                    font-size: 55%;
+                }
+            }
+        </style>
     </head>
     <body>
         <nav id="navbar" class="nav">
@@ -11,15 +32,159 @@
                 <li>
                     <a href="#welcome-section">About</a>
                 </li>
+                <li>
+                    <a href="#projects">Work</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
             </ul>
         </nav>
+
+        <!-- END NAV -->
+
+        <!-- START SECTIONS -->
+
         <section id="welcome-section" class="welcome-section">
             <h1>Hi, I am KH</h1>
-            <p>a web developer</p>
+            <h2>a web developer</h2>
+            <p>Below projects are all fake. &nbsp;&nbsp; All are just for practice.</p>
         </section>
+
         <section id="projects" class="projects-section">
-            
+            <h2 class="projects-section-header">These are some of my projects</h2>
+            <div class="projects-grid">
+                <a
+                    href="https://codepen.io/freeCodeCamp/full/zNqgVx"
+                    target="_blank"
+                    class="project project-tile"
+                >
+                <img
+                    class="project-image"
+                    src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg"
+                    alt="project"
+                />
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Tribute Page
+                    <span class="code">&#47;&gt;</span>
+                </p>
+                </a>
+                <a
+                href="https://codepen.io/freeCodeCamp/full/qRZeGZ"
+                target="_blank"
+                class="project project-tile"
+                >
+                <img
+                    class="project-image"
+                    src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/random-quote-machine.png"
+                    alt="project"
+                />
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Random Quote Machine
+                    <span class="code">&#47;&gt;</span>
+                </p>
+                </a>
+                <a
+                href="https://codepen.io/freeCodeCamp/full/wgGVVX"
+                target="_blank"
+                class="project project-tile"
+                >
+                <img
+                    class="project-image"
+                    src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/calc.png"
+                    alt="project"
+                />
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    JavaScript Calculator
+                    <span class="code">&#47;&gt;</span>
+                </p>
+                </a>
+                <a
+                href="https://codepen.io/freeCodeCamp/full/mVEJag"
+                target="_blank"
+                class="project project-tile"
+                >
+                <img
+                    class="project-image"
+                    src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/map.jpg"
+                    alt="project"
+                />
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Map Data Across the Globe
+                    <span class="code">&#47;&gt;</span>
+                </p>
+                </a>
+                <a
+                href="https://codepen.io/freeCodeCamp/full/wGqEga"
+                target="_blank"
+                class="project project-tile"
+                >
+                <img
+                    class="project-image"
+                    src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/wiki.png"
+                    alt="project"
+                />
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Wikipedia Viewer
+                    <span class="code">&#47;&gt;</span>
+                </p>
+                </a>
+                <a
+                href="https://codepen.io/freeCodeCamp/full/KzXQgy"
+                target="_blank"
+                class="project project-tile"
+                >
+                <img
+                    class="project-image"
+                    src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tic-tac-toe.png"
+                    alt="project"
+                />
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Tic Tac Toe Game
+                    <span class="code">&#47;&gt;</span>
+                </p>
+                </a>
+            </div>
         </section>
+
+        <section id="contact" class="contact-section">
+            <div class="contact-section-header">
+                <h2>Let's work together...</h2>
+                <p>How do you take your coffee?</p>
+            </div>
+            <div class="contact-links">
+                <a
+                  href="https://developerkh.netlify.app/"
+                  target="_blank"
+                  class="btn contact-details"
+                  ><i class="fas fa-at"></i> Devlog</a
+                >
+                <a
+                  id="profile-link"
+                  href="https://github.com/kyuhyunhan"
+                  target="_blank"
+                  class="btn contact-details"
+                  ><i class="fab fa-github"></i> GitHub</a
+                >
+              </div>
+        </section>
+
+        <!-- END SECTIONS -->
+
+        <footer>
+            <p>
+                **This is just a fake portfolio. All the projects and contact details given are not real.
+            </p>
+            <p>
+                &copy; Kyuhyun
+            </p>
+        </footer>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>
 </html>
